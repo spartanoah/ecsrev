@@ -97,7 +97,7 @@ public class ApplicationProcessorService : ServiceBase, IService
 
             var followers = await api.CountFollowers(userId);
             var friends = await api.CountFriends(userId);
-            var isRichMindset = false; // user is rich/wellknown/other
+            var isRichMindset = true; // user is rich/wellknown/other
             
             if (followers >= 20000)
             {
